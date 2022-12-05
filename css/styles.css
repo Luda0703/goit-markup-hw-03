@@ -18,9 +18,15 @@ body {
     
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .list {
     text-decoration: none;
 }
+
 
 h1,
 h2,
@@ -38,9 +44,11 @@ ul {
 }
 
 .container {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
 
    outline: 1px solid red;
 }
@@ -48,13 +56,12 @@ ul {
 
 
 .color-web {
+    display: flex;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     color: var(--accent-color);
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -261,14 +268,9 @@ ul {
 .mobile {
     display: flex;
     align-items: center;
-    margin-left: 24px;
-   
+     
 }
 
-.mobile .pic:first-child {
-    margin-left: 0;
-
-}
 
 .btn {
    
@@ -293,7 +295,7 @@ ul {
     color: var(--hero-color)
 }
 
-.container.portfolio {
+.portfolio {
    
     padding-top: 96px;
     padding-bottom: 120px;
@@ -322,16 +324,21 @@ ul {
 }
 
 .title-team {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+.title {
     margin-left: 24px;
 }
 
-.title-team:first-child {
+.title:first-child {
     margin-left: 0;
 }
 
-.section-subtitle {
-    margin-top: 32px;
-}
+
 
 .row {
     display: flex;
@@ -341,22 +348,25 @@ ul {
     gap: 24px;
 }
 
-.img {
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
-}
+    column-gap: 24px;
+    row-gap: 48px
 
-.img .list {
-    margin-left: 24px; 
 }
 
 
 .subject {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+ 
 }
 
 
@@ -371,16 +381,7 @@ ul {
 }
 
 .white-studio {
-    
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.2;
     color: var(--studio-color);
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .desc {
@@ -391,3 +392,4 @@ ul {
     color: var(--desc-color);
     letter-spacing: 0.02em;
 }
+
